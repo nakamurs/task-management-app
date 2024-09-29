@@ -1,0 +1,41 @@
+@model IEnumerable<TaskManagementApp.Models.TaskItem>
+
+<!-- Display the list of tasks -->
+<h2>Task List</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th style="padding-right: 100px;">Title</th>
+            <th style="padding-right: 20px;">Completed</th>
+            <th style="padding-right: 50px;">Due Date</th>
+            <th style="padding-right: 80px;">Actions</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var task in Model)
+        {
+            <tr>
+                <td>@task.Title</td>
+                <td>
+                    <form asp-action="ToggleCompletion" method="post">
+                        <input type="hidden" name="id" value="@task.Id" />
+                        <input type="checkbox" class="complete-check" @(task.IsCompleted ? "checked" : "") onchange="this.form.submit();" />
+                    </form>
+                </td>
+                <td>@task.DueDate?.ToShortDateString()</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Tasks", new { id = task.Id })">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@task.Id">Delete</a>
+                </td>
+                <td>@task.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Button to create a new task -->
+<button onclick="window.location='@Url.Action("Create", "Tasks")'">Create New Task</button>
+
+

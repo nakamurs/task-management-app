@@ -1,0 +1,22 @@
+@model TaskManagementApp.Models.TaskItem
+
+<!-- Allow users to edit an existing task -->
+<h2>Edit Task</h2>
+
+<form asp-action="Edit" method="post">
+    <div>
+        <label>Title</label>
+        <input type="text" asp-for="Title" />
+        <span asp-validation-for="Title" class="text-danger"></span>  <!-- Validation for Title -->
+    </div>
+    <div>
+        <label>Description</label>
+        <textarea asp-for="Description"></textarea>  <!-- optional -->
+    </div>
+    <div>
+        <label>Due Date</label>
+        <input type="date" asp-for="DueDate" /> <!-- optional -->
+        <span asp-validation-for="DueDate" class="text-danger"></span> <!-- Validation for DueDate -->
+    </div>
+    <button type="submit">Save Changes</button>
+</form>
