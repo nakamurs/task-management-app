@@ -16,9 +16,6 @@
   - [`Edit.cshtml`](TaskManagerApp/Views/Tasks/Edit.cshtml): Allows users to update the details of an existing task.
   - [`Delete.cshtml`](TaskManagerApp/Views/Tasks/Delete.cshtml): Confirms the deletion of a task.
 
-- **wwwroot**
-  - Contains static files such as CSS, JavaScript, and images.
-
 ## Installation and Usage Guide
 1. Clone the repository:
    ```bash
@@ -34,7 +31,7 @@
    ```bash
    dotnet run
 6. Open a web browser and go to <https://localhost:7089> or <http://localhost:5021> to view the application.
-   **Note on Running the Application:**
+**Note on Running the Application:**
 
 When you run the application, it will utilize the URLs specified in the `Properties/launchSettings.json` file (e.g., `http://localhost:5021` or `https://localhost:7089`). Here are some important considerations:
 
