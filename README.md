@@ -34,7 +34,7 @@
 
 **Note on Running the Application:**
 
-When you run the application, it will utilize the URLs specified in the [`launchSettings.json`](TaskManagerApp/Properties/launchSettings.json) file (<https://localhost:7089> or <http://localhost:5021>).<br> 
+When you run the application, it will utilize the URLs specified in the above [`launchSettings.json`](TaskManagerApp/Properties/launchSettings.json) file.<br> 
 Here are some important considerations:
 
   * **Localhost Access**: The application is configured to run on your local machine (localhost). Make sure the specified ports are not already in use by other applications. If they are, you may need to change the ports in [`launchSettings.json`](TaskManagerApp/Properties/launchSettings.json).
