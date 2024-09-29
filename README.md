@@ -29,7 +29,7 @@
 3. Open the project in Visual Studio or your preferred IDE.
 4. Restore the necessary packages by running:
    ```bash
-   dotnet resotre
+   dotnet restore
 5. Run the application:
    ```bash
    dotnet run
