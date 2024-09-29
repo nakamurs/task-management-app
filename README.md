@@ -35,8 +35,7 @@
 
 **Note on Running the Application:**
 
-When you run the application, it will utilize the above URLs specified in the [`launchSettings.json`](TaskManagerApp/Properties/launchSettings.json) file.<br> 
-Here are some important considerations:
+When you run the application, it will utilize the above URLs specified in the [`launchSettings.json`](TaskManagerApp/Properties/launchSettings.json) file. Here are some important considerations:
 
   * **Localhost Access**: The application is configured to run on your local machine (localhost). Make sure the specified ports are not already in use by other applications. If they are, you may need to change the ports in [`launchSettings.json`](TaskManagerApp/Properties/launchSettings.json).
   * **HTTPS Configuration**: If you are accessing the application over HTTPS and encounter issues, ensure that your environment is set up to handle SSL certificates for the specified ports. You may need to trust a self-signed certificate if one is used.
