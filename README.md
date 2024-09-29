@@ -31,6 +31,7 @@
    ```bash
    dotnet run
 6. Open a web browser and go to <https://localhost:7089> or <http://localhost:5021> to view the application.
+7. Press Control + C to shut down the application when you're finished.
 
 **Note on Running the Application:**
 
