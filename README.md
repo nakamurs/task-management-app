@@ -5,16 +5,16 @@
 
 ### Project Structure
 - **Controllers**
-  - [`TasksController.cs`](Controllers/TasksController.cs): Handles the operations for tasks. It manages the logic for reading, creating, editing, and deleting tasks, as well as toggling their completion status.
+  - [`TasksController.cs`](TaskManagerApp/Controllers/TasksController.cs): Handles the operations for tasks. It manages the logic for reading, creating, editing, and deleting tasks, as well as toggling their completion status.
 
 - **Models**
-  - [`TaskItem.cs`](Models/TaskItem.cs): Defines the data structure for a task, including properties like `Id`, `Title`, `Description`, `DueDate`, and `IsCompleted`.
+  - [`TaskItem.cs`](TaskManagerApp/Models/TaskItem.cs): Defines the data structure for a task, including properties like `Id`, `Title`, `Description`, `DueDate`, and `IsCompleted`.
 
 - **Views**
-  - [`Index.cshtml`](Views/Tasks/Index.cshtml): Displays the list of tasks in a table format, allowing users to interact with each task.
-  - [`Create.cshtml`](Views/Tasks/Create.cshtml): Provides a form for users to create a new task.
-  - [`Edit.cshtml`](Views/Tasks/Edit.cshtml): Allows users to update the details of an existing task.
-  - [`Delete.cshtml`](Views/Tasks/Delete.cshtml): Confirms the deletion of a task.
+  - [`Index.cshtml`](TaskManagerApp/Views/Tasks/Index.cshtml): Displays the list of tasks in a table format, allowing users to interact with each task.
+  - [`Create.cshtml`](TaskManagerApp/Views/Tasks/Create.cshtml): Provides a form for users to create a new task.
+  - [`Edit.cshtml`](TaskManagerApp/Views/Tasks/Edit.cshtml): Allows users to update the details of an existing task.
+  - [`Delete.cshtml`](TaskManagerApp/Views/Tasks/Delete.cshtml): Confirms the deletion of a task.
 
 - **wwwroot**
   - Contains static files such as CSS, JavaScript, and images.
