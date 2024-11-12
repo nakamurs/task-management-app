@@ -1,7 +1,7 @@
 # TaskManagerApp
 
 ## Description
-**TaskManagerApp** is a web application developed using **C#** and **ASP.NET MVC**. This application allows users to manage tasks through a user-friendly interface where they can add, edit, and delete the tasks.
+**TaskManagerApp** is a web application developed with **ASP.NET MVC** using **C#** and **HTML**. This application allows users to manage tasks through a user-friendly interface where they can add, edit, and delete the tasks.
 
 ### Project Structure
 - **Controllers**
